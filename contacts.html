@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>savenkss</title>
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__wrapper">
+
+                <div class="wrapper__logo">
+                    <a href="./index.html" class="wrapper__logo-link">
+                        <img src="./image/logo.png" alt="logo" width="64" height="64" class="wrapper__logo-pic">
+                    </a>
+                </div>
+
+                <nav class="header__nav">
+                    <ul class="header__list-menu">
+                        <li class="header__item"><a href="./index.html" class="header__link">Головна</a></li>
+                        <li class="header__item"><a href="./news.html" class="header__link">Новини</a></li>
+                        <li class="header__item"><a href="./education.html" class="header__link">Навчання</a></li>
+                        <li class="header__item"><a href="./contacts.html" class="header__link">Контакти</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Контакти</h1>
+        <form class="form" action="#" method="get">
+
+            <div class="form__group">
+                <label class="form__label" for="name">Ім'я</label>
+                <input class="form__input" type="text" id="name" name="name"
+                       placeholder="Ваше ім'я" required maxlength="50">
+            </div>
+
+            <div class="form__group">
+                <label class="form__label" for="email">Email</label>
+                <input class="form__input" type="email" id="email" name="email"
+                       placeholder="Ваш email" required>
+            </div>
+
+            <div class="form__group">
+                <label class="form__label" for="phone">Телефон</label>
+                <input class="form__input" type="tel" id="phone" name="phone"
+                       placeholder="+380...">
+            </div>
+
+            <div class="form__group">
+                <label class="form__label" for="topic">Тема звернення</label>
+                <select class="form__select" id="topic" name="topic">
+                    <option value="question">Питання</option>
+                    <option value="suggestion">Пропозиція</option>
+                    <option value="other">Інше</option>
+                </select>
+            </div>
+
+            <div class="form__group">
+                <label class="form__label" for="message">Повідомлення</label>
+                <textarea class="form__textarea" id="message" name="message"
+                          rows="6" placeholder="Ваше повідомлення" required></textarea>
+            </div>
+
+            <div class="form__group">
+                <label>
+                    <input type="checkbox" name="agree" required>
+                    Погоджуюсь на обробку даних
+                </label>
+            </div>
+
+            <button class="form__button" type="submit">Надіслати</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 savenkss. Запорізький національний університет.</p>
+    </footer>
+</body>
+</html>
